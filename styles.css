@@ -1,0 +1,93 @@
+.body{
+    margin: 0px;
+    }
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+    background: darkblue;
+}
+.left-side{
+    display: flex;
+}
+.nav-link-wrapper{
+    font-size: 18px;
+    color: white;
+    
+}
+.nav-link-wrapper ul{
+float: right;
+}
+.nav-link-wrapper ul li{
+    display: inline;
+    margin-left: 25px;
+    position: relative;
+}
+.nav-link-wrapper ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-link-wrapper ul li a:hover{
+    border-bottom: 1px solid black;
+    background: tomato;
+}
+.nav-link-wrapper ul ul{
+    display: none;
+}
+.nav-link-wrapper ul li:hover > ul{
+    display: block;
+}
+.nav-link-wrapper ul li ul{
+    margin-left: 25px;
+    position: absolute;
+}
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+@keyframes slider{
+0%{
+    left: 0;
+}
+20%{
+    left: 0;
+}
+25%{
+    left: -100%;
+}
+45%{
+    left: -100%;
+}
+50%{
+    left: -200%;
+}
+70%{
+    left: -200%;
+}
+75%{
+    left: -300%;
+}
+95%{
+    left: -300%;
+}
+100%{
+    left: -400%;
+}
+}
